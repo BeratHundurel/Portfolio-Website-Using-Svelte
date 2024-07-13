@@ -1,4 +1,6 @@
 <script>
+	import '../app.css';
+	import '@fontsource-variable/urbanist';
 	import { PrismicPreview } from '@prismicio/svelte/kit';
 	import { page } from '$app/stores';
 	import { repositoryName } from '$lib/prismicio';
@@ -8,10 +10,10 @@
 	<title>{$page.data.title}</title>
 	{#if $page.data.meta_description}
 		<meta name="description" content={$page.data.meta_description} />
-	{/if} 
+	{/if}
 	{#if $page.data.meta_title}
 		<meta name="og:title" content={$page.data.meta_title} />
-	{/if} 
+	{/if}
 	{#if $page.data.meta_image}
 		<meta name="og:image" content={$page.data.meta_image} />
 		<meta name="twitter:card" content="summary_large_image" />
