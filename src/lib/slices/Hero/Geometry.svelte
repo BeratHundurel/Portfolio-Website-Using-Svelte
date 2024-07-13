@@ -19,7 +19,18 @@
 		{ color: 0x8e44ad, roughness: 0.1 },
 		{ color: 0x1abc9c, roughness: 0.1 },
 		{ color: 0x2980b9, roughness: 0, metalness: 0.5 },
-		{ color: 0x2c3e50, roughness: 0.1, metalness: 0.5 }
+		{ color: 0x2c3e50, roughness: 0.1, metalness: 0.5 },
+		{ color: 0xd35400, roughness: 0.2 },
+		{ color: 0x3498db, roughness: 0.3 },
+		{ color: 0xc0392b, roughness: 0.1, metalness: 0.7 },
+		{ color: 0x16a085, roughness: 0.2 },
+		{ color: 0x27ae60, roughness: 0.1 },
+		{ color: 0x2980b9, roughness: 0.3 },
+		{ color: 0x8e44ad, roughness: 0.2 },
+		{ color: 0x2c3e50, roughness: 0.1, metalness: 0.8 },
+		{ color: 0xd35400, roughness: 0.4 },
+		{ color: 0xf39c12, roughness: 0.1 },
+		{ color: 0xc0392b, roughness: 0.3, metalness: 0.6 }
 	];
 
 	const soundEffects = [
@@ -38,7 +49,8 @@
 	];
 
 	function getRandomMaterial() {
-		const randomInt = gsap.utils.random(1, 10, 1);
+		const randomInt = gsap.utils.random(1, 18, 1);
+        console.log(randomInt);
 		if (randomInt === 1) {
 			return new THREE.MeshNormalMaterial();
 		}
