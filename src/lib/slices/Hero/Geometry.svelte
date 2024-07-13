@@ -22,6 +22,21 @@
 		{ color: 0x2c3e50, roughness: 0.1, metalness: 0.5 }
 	];
 
+	const soundEffects = [
+		new Audio('/sounds/sound1.ogg'),
+		new Audio('/sounds/sound2.ogg'),
+		new Audio('/sounds/sound3.ogg'),
+		new Audio('/sounds/sound4.ogg'),
+		new Audio('/sounds/sound5.ogg'),
+		new Audio('/sounds/sound6.ogg'),
+		new Audio('/sounds/sound7.ogg'),
+		new Audio('/sounds/sound8.ogg'),
+		new Audio('/sounds/sound9.ogg'),
+		new Audio('/sounds/sound10.ogg'),
+		new Audio('/sounds/sound11.ogg'),
+		new Audio('/sounds/sound12.ogg')
+	];
+
 	function getRandomMaterial() {
 		const randomInt = gsap.utils.random(1, 10, 1);
 		if (randomInt === 1) {
@@ -31,6 +46,7 @@
 	}
 
 	function handleCLick(event: MouseEvent) {
+		gsap.utils.random(soundEffects).play();
 		if ('object' in event && event.object instanceof THREE.Mesh) {
 			gsap.to(event.object.rotation, {
 				x: `+=${gsap.utils.random(0, 3)}`,
