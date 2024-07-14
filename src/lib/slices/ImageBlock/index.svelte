@@ -7,5 +7,5 @@
 
 <PrismicImage
 	field={slice.primary.image}
-	class="not-prose w-full h-full rounded-md my-10 md:my-14 lg:my-16"
+	class="not-prose w-full h-full rounded-md mt-6 md:mt-10 lg:mt-12"
 />

@@ -7,7 +7,7 @@
 	import Bounded from './Bounded.svelte';
 	import Heading from './Heading.svelte';
 
-	export let page: Content.BlogpostDocument | Content.ProjectDocument;
+	export let page: Content.ProjectDocument;
 </script>
 
 <Bounded tag="article">
@@ -21,7 +21,7 @@
 			{/each}
 		</div>
 
-		<div class="prose prose-lg prose-invert mt-12 w-full max-w-none md:mt-20">
+		<div class="prose prose-lg prose-invert mt-10 w-full max-w-none md:mt-16">
 			<SliceZone slices={page.data.slices} {components} />
 		</div>
 	</div>
