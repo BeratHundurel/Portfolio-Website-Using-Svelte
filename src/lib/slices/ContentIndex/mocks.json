@@ -5,8 +5,13 @@
 		"primary": {
 			"heading": {
 				"__TYPE__": "FieldContent",
-				"value": "happened",
+				"value": "rope",
 				"type": "Text"
+			},
+			"content_type": {
+				"__TYPE__": "FieldContent",
+				"value": "Blog",
+				"type": "Select"
 			},
 			"description": {
 				"__TYPE__": "StructuredTextContent",
@@ -14,10 +19,36 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Enim sit nisi enim culpa irure aute fugiat dolore nulla do pariatur elit Lorem."
+							"text": "Proident laborum aliqua ad officia duis enim eu occaecat aliqua est ullamco. Lorem pariatur cillum esse laboris quis exercitation nulla amet culpa Lorem. Occaecat esse adipisicing velit dolor cupidatat magna ad deserunt."
 						}
 					}
 				]
+			},
+			"view_more_text": {
+				"__TYPE__": "FieldContent",
+				"value": "trail",
+				"type": "Text"
+			},
+			"fallback_item_image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+				"width": 5616,
+				"height": 3744,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"thumbnails": {}
 			}
 		},
 		"items": []

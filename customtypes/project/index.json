@@ -6,6 +6,13 @@
 	"status": true,
 	"json": {
 		"Main": {
+			"title": {
+				"type": "Text",
+				"config": {
+					"label": "Title",
+					"placeholder": ""
+				}
+			},
 			"uid": {
 				"config": {
 					"label": "UID"
@@ -25,7 +32,10 @@
 				"fieldset": "Slice Zone",
 				"config": {
 					"choices": {
-						"content_index": {
+						"image_block": {
+							"type": "SharedSlice"
+						},
+						"rich_text": {
 							"type": "SharedSlice"
 						}
 					}

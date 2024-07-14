@@ -28,7 +28,7 @@
 </main>
 <div class="background-gradient absolute inset-0 -z-50 max-h-screen" />
 <div
-	class="absolute inset-0 pointer-events-none -z-40 h-full bg-[url('noisetexture.jpg')] opacity-20 mix-blend-soft-light"
+	class="absolute inset-0 pointer-events-none -z-40 h-full bg-[url('/noisetexture.jpg')] opacity-20 mix-blend-soft-light"
 />
 <Footer settings={data.settings} />
 <PrismicPreview {repositoryName} />

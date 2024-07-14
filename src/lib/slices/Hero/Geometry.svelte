@@ -50,7 +50,6 @@
 
 	function getRandomMaterial() {
 		const randomInt = gsap.utils.random(1, 18, 1);
-        console.log(randomInt);
 		if (randomInt === 1) {
 			return new THREE.MeshNormalMaterial();
 		}

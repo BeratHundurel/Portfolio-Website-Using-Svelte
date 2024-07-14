@@ -4,6 +4,7 @@ import Biography from './Biography/index.svelte';
 import ContentIndex from './ContentIndex/index.svelte';
 import Experiences from './Experiences/index.svelte';
 import Hero from './Hero/index.svelte';
+import ImageBlock from './ImageBlock/index.svelte';
 import RichText from './RichText/index.svelte';
 import TechList from './TechList/index.svelte';
 
@@ -12,6 +13,7 @@ export const components = {
 	content_index: ContentIndex,
 	experiences: Experiences,
 	hero: Hero,
+	image_block: ImageBlock,
 	rich_text: RichText,
 	tech_list: TechList
 };
