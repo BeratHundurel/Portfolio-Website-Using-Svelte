@@ -11,7 +11,7 @@
 
 <Bounded data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
 	<div class="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr]">
-		<Heading size="xl" class="col-start-1">
+		<Heading size="lg" class="col-start-1">
 			{slice.primary.heading}
 		</Heading>
 

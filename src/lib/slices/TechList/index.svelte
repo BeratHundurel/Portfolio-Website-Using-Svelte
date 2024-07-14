@@ -53,7 +53,7 @@
 	bind:this={component}
 >
 	<Bounded as="div">
-		<Heading size="xl" class="mb-8" tag="h2">
+		<Heading size="lg" class="mb-8" tag="h2">
 			{slice.primary.heading}
 		</Heading>
 	</Bounded>
@@ -65,7 +65,7 @@
 		>
 			{#each Array(15) as _, index}
 				<span
-					class="tech-item text-8xl font-extrabold uppercase tracking-tighter"
+					class="tech-item text-6xl md:text-8xl font-extrabold uppercase tracking-tighter"
 					style="color: {index === 7 && tech_color ? tech_color : 'inherit'}"
 				>
 					{tech_name}

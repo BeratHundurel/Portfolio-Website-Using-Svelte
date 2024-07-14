@@ -10,7 +10,7 @@
 </script>
 
 <Bounded data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-	<Heading size="xl" class="mb-8">
+	<Heading size="lg" class="mb-8">
 		{slice.primary.heading}
 	</Heading>
 	{#if isFilled.richText(slice.primary.description)}

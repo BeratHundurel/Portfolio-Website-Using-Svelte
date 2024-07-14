@@ -115,7 +115,7 @@
 			>
 				<div class="flex flex-col">
 					<span class="text-3xl font-bold">{post.data.title}</span>
-					<div class="flex gap-3 text-yellow-400">
+					<div class="flex gap-3 text-yellow-400 flex-wrap mt-1">
 						{#each post.tags as tag}
 							<span class="text-lg font-bold">
 								{tag}
