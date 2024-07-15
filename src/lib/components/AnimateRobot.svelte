@@ -12,8 +12,6 @@ Title: Robot Playground
 	import { Group } from 'three';
 	import { T, type Props, type Events, type Slots, forwardEventHandlers } from '@threlte/core';
 	import { interactivity, useGltf, useGltfAnimations } from '@threlte/extras';
-	import { onMount, setContext } from 'svelte';
-	import { get } from 'svelte/store';
 
 	interactivity();
 	type $$Props = Props<THREE.Group>;
@@ -101,7 +99,7 @@ Title: Robot Playground
 		};
 	};
 
-	const gltf = useGltf<GLTFResult>('static/scene.gltf');
+	const gltf = useGltf<GLTFResult>('static/robot/robot.gltf');
 	export const { actions, mixer } = useGltfAnimations<ActionName>(gltf, ref);
 
 	const component = forwardEventHandlers();
