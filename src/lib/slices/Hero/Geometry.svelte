@@ -10,27 +10,29 @@
 	export let rate = 0.5;
 
 	let visible = false;
-	let reducedMotionRate = 0;
 
 	const materialParams = [
-		{ color: 0x2ecc71, roughness: 0 },
-		{ color: 0xf1c40f, roughness: 0.4 },
-		{ color: 0xe74c3c, roughness: 0.1 },
-		{ color: 0x8e44ad, roughness: 0.1 },
-		{ color: 0x1abc9c, roughness: 0.1 },
-		{ color: 0x2980b9, roughness: 0, metalness: 0.5 },
-		{ color: 0x2c3e50, roughness: 0.1, metalness: 0.5 },
-		{ color: 0xd35400, roughness: 0.2 },
-		{ color: 0x3498db, roughness: 0.3 },
-		{ color: 0xc0392b, roughness: 0.1, metalness: 0.7 },
-		{ color: 0x16a085, roughness: 0.2 },
-		{ color: 0x27ae60, roughness: 0.1 },
-		{ color: 0x2980b9, roughness: 0.3 },
-		{ color: 0x8e44ad, roughness: 0.2 },
-		{ color: 0x2c3e50, roughness: 0.1, metalness: 0.8 },
-		{ color: 0xd35400, roughness: 0.4 },
-		{ color: 0xf39c12, roughness: 0.1 },
-		{ color: 0xc0392b, roughness: 0.3, metalness: 0.6 }
+		{ color: 0xff5733, roughness: 0.1, metalness: 0.8, emissive: 0xff4500, emissiveIntensity: 0.5 }, // Bright Red
+		{ color: 0xffc300, roughness: 0.4, metalness: 0.2, emissive: 0xffff00, emissiveIntensity: 0.3 }, // Bright Yellow
+		{ color: 0x33ff57, roughness: 0.1, metalness: 0.7, emissive: 0x00ff00, emissiveIntensity: 0.5 }, // Bright Green
+		{ color: 0x3357ff, roughness: 0.1, metalness: 0.5, emissive: 0x0000ff, emissiveIntensity: 0.4 }, // Bright Blue
+		{ color: 0x8e44ad, roughness: 0.2, metalness: 0.4, emissive: 0x9400d3, emissiveIntensity: 0.3 }, // Purple
+		{ color: 0x1abc9c, roughness: 0.1, metalness: 0.3, emissive: 0x00ced1, emissiveIntensity: 0.3 }, // Teal
+		{ color: 0x2980b9, roughness: 0.3, metalness: 0.6, emissive: 0x4682b4, emissiveIntensity: 0.4 }, // Steel Blue
+		{ color: 0xd35400, roughness: 0.2, metalness: 0.3, emissive: 0xff4500, emissiveIntensity: 0.4 }, // Orange Red
+		{ color: 0xc0392b, roughness: 0.3, metalness: 0.6, emissive: 0x800000, emissiveIntensity: 0.4 }, // Dark Red
+		{ color: 0x16a085, roughness: 0.2, metalness: 0.4, emissive: 0x2e8b57, emissiveIntensity: 0.3 }, // Sea Green
+		{ color: 0xf39c12, roughness: 0.1, metalness: 0.4, emissive: 0xff8c00, emissiveIntensity: 0.4 }, // Dark Orange
+		{ color: 0x9b59b6, roughness: 0.3, metalness: 0.5, emissive: 0x9400d3, emissiveIntensity: 0.4 }, // Amethyst
+		{ color: 0x2ecc71, roughness: 0.1, metalness: 0.9, emissive: 0x00ff7f, emissiveIntensity: 0.4 }, // Spring Green
+		{ color: 0x34495e, roughness: 0.3, metalness: 0.5, emissive: 0x2f4f4f, emissiveIntensity: 0.3 }, // Dark Slate Gray
+		{ color: 0xe74c3c, roughness: 0.1, metalness: 0.8, emissive: 0xff0000, emissiveIntensity: 0.5 }, // Red
+		{ color: 0x27ae60, roughness: 0.1, metalness: 0.5, emissive: 0x006400, emissiveIntensity: 0.4 }, // Dark Green
+		{ color: 0x2c3e50, roughness: 0.1, metalness: 0.9, emissive: 0x111111, emissiveIntensity: 0.2 }, // Midnight Blue
+		{ color: 0xe67e22, roughness: 0.4, metalness: 0.3, emissive: 0xffa500, emissiveIntensity: 0.4 },
+		{ color: 0x1b2631, roughness: 0.2, metalness: 0.5, emissive: 0x0, emissiveIntensity: 0.2 }, // Dark Navy
+		{ color: 0x17202a, roughness: 0.3, metalness: 0.4, emissive: 0x0, emissiveIntensity: 0.2 }, // Very Dark Gray
+		{ color: 0x2d3436, roughness: 0.1, metalness: 0.6, emissive: 0x0, emissiveIntensity: 0.3 } // Charcoal  // Orange
 	];
 
 	const soundEffects = [
