@@ -1,8 +1,9 @@
 <script lang="ts">
 	import type { Content } from '@prismicio/client';
 	import Scene from './Scene.svelte';
-	import { onMount } from 'svelte';
+	import { getContext, onMount } from 'svelte';
 	import { gsap } from 'gsap';
+	import { cameraProjectionMatrixInverse } from 'three/examples/jsm/nodes/Nodes.js';
 
 	export let slice: Content.HeroSlice;
 
