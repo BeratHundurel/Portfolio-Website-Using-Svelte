@@ -17,18 +17,18 @@
 <header class="top-0 z-50 mx-auto max-w-7xl md:sticky md:top-4 relative">
 	<nav>
 		<div
-			class="flex flex-col justify-between rounded-b-lg bg-slate-50 px-4 py-2 md:m4 md:flex-row md:items-center md:rounded-xl"
+			class="flex flex-col justify-between rounded-b-lg px-4 py-2 md:flex-row md:items-center md:rounded-xl backdrop:blur-lg transition-all"
 		>
 			<div class="flex items-center justify-between">
 				<a
 					href="/"
 					aria-label="Homepage"
-					class="text-xl font-extrabold tracking-tighter text-slate-900">{settings.data.name}</a
+					class="text-xl font-extrabold tracking-tighter text-slate-100">{settings.data.name}</a
 				>
 				<button
 					aria-expanded={open}
 					aria-label="Open Menu"
-					class="block p-2 text-2xl text-slate-800 md:hidden"
+					class="block p-2 text-2xl text-slate-100 md:hidden"
 					on:click={() => (open = true)}
 				>
 					<IconMenu />
@@ -36,7 +36,7 @@
 			</div>
 			<!-- Mobile Nav -->
 			<ul
-				class={`fixed inset-0 z-50 flex flex-col items-end gap-4 bg-slate-50 pr-4 pt-14 transition-transform duration-300 ease-in-out md:hidden ${open ? 'translate-x-0' : 'translate-x-[100%]'}`}
+				class={`fixed inset-0 z-50 flex flex-col items-end gap-6 bg-slate-100 pr-4 pt-14 transition-transform duration-300 ease-in-out md:hidden ${open ? 'translate-x-0' : 'translate-x-[100%]'}`}
 			>
 				<li>
 					<button
@@ -59,7 +59,7 @@
 			</ul>
 
 			<!-- Desktop Nav -->
-			<ul class="relative z-50 hidden flex-row items-center gap-1 bg-transparent py-0 md:flex">
+			<ul class="relative z-50 hidden flex-row items-center gap-2 bg-transparent py-0 md:flex">
 				{#each settings.data.nav_item as { label, link }}
 					<li>
 						<NavbarLink field={link} {label} {onLinkClick} type="desktop" />

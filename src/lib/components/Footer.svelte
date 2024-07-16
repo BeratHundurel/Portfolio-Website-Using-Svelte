@@ -17,7 +17,7 @@
 		>
 			<a
 				href="/"
-				class="text-xl font-extrabold tracking-tighter text-slate-100 transition-color duration-150 hover:text-yellow-400"
+				class="text-xl font-extrabold tracking-tighter text-slate-100 transition-color duration-150 hover:text-emerald-400"
 			>
 				{settings.data.name}
 			</a>
@@ -36,7 +36,7 @@
 					<li>
 						<PrismicLink
 							field={link}
-							class="block px-3 py-1 text-base font-bold text-slate-100 transition-colors duration-150 hover:text-yellow-400"
+							class="block px-3 py-1 text-base font-bold text-slate-100 transition-colors duration-150 hover:text-emerald-400"
 							>{label}</PrismicLink
 						>
 					</li>
@@ -52,7 +52,7 @@
 			{#if isFilled.link(settings.data.github_link)}
 				<PrismicLink
 					field={settings.data.github_link}
-					class="p-2 text-2xl text-slate-300 transform transition-all duration-150 hover:scale-125 hover:text-yellow-400"
+					class="p-2 text-2xl text-slate-300 transform transition-all duration-150 hover:scale-125 hover:text-emerald-400"
 					aria-label={settings.data.name + ' on Github'}
 				>
 					<IconGithub />
@@ -61,7 +61,7 @@
 			{#if isFilled.link(settings.data.linkedin_link)}
 				<PrismicLink
 					field={settings.data.linkedin_link}
-					class="p-2 text-2xl text-slate-300 transform transition-all duration-150 hover:scale-125 hover:text-yellow-400"
+					class="p-2 text-2xl text-slate-300 transform transition-all duration-150 hover:scale-125 hover:text-emerald-400"
 					aria-label={settings.data.name + ' on Linkedin'}
 				>
 					<IconLinkedin />

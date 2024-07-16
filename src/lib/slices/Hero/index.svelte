@@ -1,9 +1,8 @@
 <script lang="ts">
 	import type { Content } from '@prismicio/client';
 	import Scene from './Scene.svelte';
-	import { getContext, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
-	import { cameraProjectionMatrixInverse } from 'three/examples/jsm/nodes/Nodes.js';
 
 	export let slice: Content.HeroSlice;
 
@@ -83,7 +82,7 @@
 					{/if}
 				</h1>
 				<span
-					class="job-title opacity-0 block bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500 bg-clip-text text-transparent text-2xl uppercase font-bold tracking-[.2em] md:text-4xl"
+					class="job-title opacity-0 block bg-gradient-to-tr from-emerald-400 via-emerald-100 to-emerald-900 bg-clip-text text-transparent text-2xl uppercase font-bold tracking-[.2em] md:text-4xl"
 				>
 					{slice.primary.tag_line}
 				</span>

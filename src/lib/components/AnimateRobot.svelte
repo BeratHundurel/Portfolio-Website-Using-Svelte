@@ -2,9 +2,8 @@
 	import type * as THREE from 'three';
 	import { Group } from 'three';
 	import { T, type Props, type Events, type Slots, forwardEventHandlers } from '@threlte/core';
-	import { interactivity, useGltf, useGltfAnimations } from '@threlte/extras';
+	import { useGltf, useGltfAnimations } from '@threlte/extras';
 
-	interactivity();
 	type $$Props = Props<THREE.Group>;
 	type $$Events = Events<THREE.Group>;
 	type $$Slots = Slots<THREE.Group> & { fallback: {}; error: { error: any } };
@@ -98,7 +97,6 @@
 	$: $actions.Experiment?.play();
 </script>
 
-<!-- <button on:mouseenter={}></button> -->
 <T is={ref} dispose={false} {...$$restProps} bind:this={$component}>
 	{#await gltf}
 		<slot name="fallback" />
