@@ -497,7 +497,7 @@
 
 	<section id="projects" class="section-block projects-section" aria-labelledby="projects-title">
 		<div class="section-intro">
-			<h2 id="projects-title">Selected projects.</h2>
+			<h2 id="projects-title">Personal projects.</h2>
 			<p>Side projects spanning editor themes, terminal tools, desktop apps, and Go services.</p>
 		</div>
 
