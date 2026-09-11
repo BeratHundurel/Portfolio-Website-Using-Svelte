@@ -58,7 +58,7 @@
 	<meta name="title" content="Berat Hündürel - Full-Stack Engineer" />
 	<meta
 		name="description"
-		content="Backend-focused full-stack engineer building production APIs, web apps, and open-source GPUI Component contributions with C#, Go, TypeScript, Svelte, and Rust."
+		content="Backend-focused full-stack engineer building production APIs, web apps, and open-source GPUI Kit contributions with C#, Go, TypeScript, Svelte, and Rust."
 	/>
 	<meta name="author" content="Berat Hündürel" />
 	<meta
@@ -72,7 +72,7 @@
 	<meta property="og:title" content="Berat Hündürel - Full-Stack Engineer" />
 	<meta
 		property="og:description"
-		content="Backend-focused full-stack engineer building production APIs, web apps, and open-source GPUI Component contributions."
+		content="Backend-focused full-stack engineer building production APIs, web apps, and open-source GPUI Kit contributions."
 	/>
 	<meta property="og:url" content={canonicalUrl} />
 	<meta property="og:image" content="https://berathundurel.com/og-image.png" />
@@ -88,7 +88,7 @@
 	<meta name="twitter:title" content="Berat Hündürel - Full-Stack Engineer" />
 	<meta
 		name="twitter:description"
-		content="Backend-focused full-stack engineer building production APIs, web apps, and open-source GPUI Component contributions."
+		content="Backend-focused full-stack engineer building production APIs, web apps, and open-source GPUI Kit contributions."
 	/>
 	<meta name="twitter:image" content="https://berathundurel.com/og-image.png" />
 	<meta name="twitter:image:alt" content="Berat Hündürel - Full-Stack Engineer portfolio preview" />

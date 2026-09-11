@@ -32,7 +32,7 @@
 			value: 'Printomi',
 			detail: 'Printing infrastructure and operations tools'
 		},
-		{ label: 'Open source', value: '8 merged PRs', detail: 'gpui-component, Apr-Jul 2026' },
+		{ label: 'Open source', value: 'GPUI Kit', detail: 'Merged contributions, Apr-Sep 2026' },
 		{
 			label: 'Main stack',
 			value: 'Go / .NET / Svelte',
@@ -101,85 +101,88 @@
 		}
 	];
 
+	// Curated for feature scope and user impact; the full PR history is listed separately.
 	const gpuiHighlights = [
 		{
 			title: 'TextView selection',
-			detail:
-				'Added double-click word selection, triple-click block selection, select-all behavior, shared word-boundary helpers, and focused tests.',
+			detail: 'Added native word, block, and select-all text selection.',
 			pr: 'PR #2408',
-			url: 'https://github.com/longbridge/gpui-component/pull/2408'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2408'
 		},
 		{
-			title: 'Markdown highlighting & performance',
-			detail:
-				'Added language-aware highlighting for fenced code blocks and reused lazy syntax queries to keep Markdown rendering fast.',
-			pr: '2 PRs',
-			url: 'https://github.com/longbridge/gpui-component/pull/2557'
+			title: 'Markdown highlighting',
+			detail: 'Added language-aware code highlighting with query reuse.',
+			pr: 'PR #2557',
+			url: 'https://github.com/longbridge/gpui-kit/pull/2557'
 		},
 		{
-			title: 'Segmented tabs stability',
-			detail:
-				'Fixed indicator flicker in dynamic segmented tabs and added story coverage for add, remove, and switch behavior.',
-			pr: 'PR #2397',
-			url: 'https://github.com/longbridge/gpui-component/pull/2397'
-		},
-		{
-			title: 'Sidebar, menu, and rendering fixes',
-			detail:
-				'Improved sidebar toggling, popup menu sizing, highlighter empty-range handling, and GPUI BoxShadow compatibility.',
-			pr: '4 PRs',
-			url: 'https://github.com/longbridge/gpui-component/pulls?q=author%3ABeratHundurel'
+			title: 'Markdown frontmatter',
+			detail: 'Rendered YAML metadata through an opt-in Markdown plugin.',
+			pr: 'PR #2850',
+			url: 'https://github.com/longbridge/gpui-kit/pull/2850'
 		}
 	];
 
 	const gpuiPullRequests = [
 		{
+			number: '#3021',
+			title: 'tab: Fix explicit scrolling to newly added tabs',
+			merged: 'Sep 10, 2026',
+			url: 'https://github.com/longbridge/gpui-kit/pull/3021'
+		},
+		{
+			number: '#2850',
+			title: 'markdown: Add Frontmatter plugin as structured metadata',
+			merged: 'Sep 8, 2026',
+			url: 'https://github.com/longbridge/gpui-kit/pull/2850'
+		},
+		{
 			number: '#2557',
 			title: 'highlighter: Highlight fenced code blocks in Markdown source',
 			merged: 'Jul 13, 2026',
-			url: 'https://github.com/longbridge/gpui-component/pull/2557'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2557'
 		},
 		{
 			number: '#2457',
 			title: 'highlighter: prevent empty range style leaks',
 			merged: 'Jun 11, 2026',
-			url: 'https://github.com/longbridge/gpui-component/pull/2457'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2457'
 		},
 		{
 			number: '#2408',
 			title: 'text: support native multi-click selection in TextView',
 			merged: 'May 29, 2026',
-			url: 'https://github.com/longbridge/gpui-component/pull/2408'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2408'
 		},
 		{
 			number: '#2402',
 			title: 'chore: Bump gpui for BoxShadow inset',
 			merged: 'May 27, 2026',
-			url: 'https://github.com/longbridge/gpui-component/pull/2402'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2402'
 		},
 		{
 			number: '#2400',
 			title: 'text: Improve markdown code block rendering performance',
 			merged: 'May 26, 2026',
-			url: 'https://github.com/longbridge/gpui-component/pull/2400'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2400'
 		},
 		{
 			number: '#2397',
 			title: 'tabs: Fix segmented indicator flicker',
 			merged: 'May 26, 2026',
-			url: 'https://github.com/longbridge/gpui-component/pull/2397'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2397'
 		},
 		{
 			number: '#2320',
 			title: 'menu_story: avoid popup-menu resize on shortcut load',
 			merged: 'Apr 30, 2026',
-			url: 'https://github.com/longbridge/gpui-component/pull/2320'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2320'
 		},
 		{
 			number: '#2286',
 			title: 'sidebar: Add click_to_toggle functionality',
 			merged: 'Apr 24, 2026',
-			url: 'https://github.com/longbridge/gpui-component/pull/2286'
+			url: 'https://github.com/longbridge/gpui-kit/pull/2286'
 		}
 	];
 
@@ -447,26 +450,26 @@
 
 	<section id="open-source" class="section-block oss-section" aria-labelledby="oss-title">
 		<div class="section-intro">
-			<h2 id="oss-title">Open-source work in GPUI Component.</h2>
+			<h2 id="oss-title">Open-source work in GPUI Kit.</h2>
 			<p>
-				I've had eight pull requests merged into Longbridge's Rust component library, covering text
-				selection, syntax highlighting, rendering performance, and UI fixes.
+				I've contributed to Longbridge's Rust component library, covering Markdown parsing, tab
+				scrolling, text selection, syntax highlighting, rendering performance, and UI fixes.
 			</p>
 		</div>
 
 		<div class="oss-layout">
 			<div class="oss-visual">
-				<a href="https://github.com/longbridge/gpui-component" target="_blank" rel="noreferrer">
+				<a href="https://github.com/longbridge/gpui-kit" target="_blank" rel="noreferrer">
 					<img
 						src="/gpui-component-og.png"
 						width="1200"
 						height="600"
 						loading="eager"
-						alt="GitHub preview for the longbridge gpui-component repository"
+						alt="GitHub preview for the Longbridge gpui-kit repository"
 					/>
 				</a>
 				<div class="oss-caption">
-					<p>gpui-component</p>
+					<p>gpui-kit</p>
 					<span>Rust components for native desktop applications using GPUI.</span>
 				</div>
 			</div>
@@ -474,17 +477,15 @@
 			<div class="oss-highlights">
 				{#each gpuiHighlights as item (item.title)}
 					<a class="oss-card" href={item.url} target="_blank" rel="noreferrer">
-						<div>
-							<h3>{item.title}</h3>
-							<p>{item.detail}</p>
-						</div>
+						<h3>{item.title}</h3>
 						<span>{item.pr}</span>
+						<p>{item.detail}</p>
 					</a>
 				{/each}
 			</div>
 		</div>
 
-		<div class="pr-list" aria-label="Merged gpui-component pull requests">
+		<div class="pr-list" aria-label="Merged gpui-kit pull requests">
 			{#each gpuiPullRequests as pr (pr.number)}
 				<a class="pr-row" href={pr.url} target="_blank" rel="noreferrer">
 					<span class="pr-number">{pr.number}</span>

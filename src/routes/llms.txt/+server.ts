@@ -3,7 +3,7 @@ import type { RequestHandler } from '@sveltejs/kit';
 export const GET: RequestHandler = ({ url }) => {
 	const body = `# Berat Hündürel - Full-Stack Engineer
 
-> Backend-focused full-stack engineer building production APIs, web applications, internal tools, and open-source GPUI Component improvements. Based in Istanbul, Turkey.
+> Backend-focused full-stack engineer building production APIs, web applications, internal tools, and open-source GPUI Kit improvements. Based in Istanbul, Turkey.
 
 ## About
 
@@ -22,7 +22,7 @@ export const GET: RequestHandler = ({ url }) => {
 - Frontend: React, Next.js, Svelte
 - Databases: Microsoft SQL Server, PostgreSQL
 - Infrastructure: Docker, IIS, GitHub Actions, Testcontainers, CUPS
-- Open Source: 8 merged PRs to longbridge/gpui-component between Apr 24 and Jul 13, 2026
+- Open Source: Contributions to longbridge/gpui-kit between Apr 24 and Sep 10, 2026
 
 ## Experience
 
@@ -44,14 +44,16 @@ Digital agency delivering e-commerce and marketing solutions.
 
 ## Open Source
 
-- longbridge/gpui-component PR #2557: language-aware highlighting for fenced Markdown code blocks
-- longbridge/gpui-component PR #2457: highlighter empty range style leak fix
-- longbridge/gpui-component PR #2408: native multi-click selection in TextView
-- longbridge/gpui-component PR #2402: GPUI BoxShadow inset compatibility
-- longbridge/gpui-component PR #2400: markdown code block rendering performance
-- longbridge/gpui-component PR #2397: segmented tab indicator flicker fix
-- longbridge/gpui-component PR #2320: popup menu minimum width to avoid resize
-- longbridge/gpui-component PR #2286: SidebarMenuItem click_to_toggle support
+- longbridge/gpui-kit PR #3021: explicit scrolling to newly inserted tabs with regression coverage
+- longbridge/gpui-kit PR #2850: opt-in Markdown YAML frontmatter rendering as structured metadata
+- longbridge/gpui-kit PR #2557: language-aware highlighting for fenced Markdown code blocks
+- longbridge/gpui-kit PR #2457: highlighter empty range style leak fix
+- longbridge/gpui-kit PR #2408: native multi-click selection in TextView
+- longbridge/gpui-kit PR #2402: GPUI BoxShadow inset compatibility
+- longbridge/gpui-kit PR #2400: markdown code block rendering performance
+- longbridge/gpui-kit PR #2397: segmented tab indicator flicker fix
+- longbridge/gpui-kit PR #2320: popup menu minimum width to avoid resize
+- longbridge/gpui-kit PR #2286: SidebarMenuItem click_to_toggle support
 
 ## Projects
 

@@ -878,7 +878,7 @@ h3 {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
 	gap: 1rem;
-	align-items: stretch;
+	align-items: start;
 }
 
 .oss-visual,
@@ -892,14 +892,16 @@ h3 {
 
 .oss-visual {
 	display: grid;
-	grid-template-rows: 1fr auto;
+	grid-template-rows: auto auto;
 	overflow: hidden;
-	min-height: 460px;
+	align-self: start;
+	min-height: 0;
 	box-shadow: var(--shadow);
 }
 
 .oss-visual a {
 	display: block;
+	aspect-ratio: 2 / 1;
 	min-height: 0;
 	background: var(--surface-soft);
 }
@@ -936,14 +938,17 @@ h3 {
 
 .oss-highlights {
 	display: grid;
+	grid-template-rows: repeat(3, minmax(min-content, 1fr));
+	align-self: stretch;
 	gap: 1rem;
 }
 
 .oss-card {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) auto;
-	gap: 1rem;
-	align-items: start;
+	gap: 0.45rem 1rem;
+	align-content: center;
+	align-items: center;
 	padding: 1rem;
 	transition:
 		transform 180ms ease,
@@ -960,7 +965,7 @@ h3 {
 }
 
 .oss-card p {
-	margin-top: 0.45rem;
+	grid-column: 1 / -1;
 	font-size: 0.94rem;
 }
 
@@ -1387,10 +1392,6 @@ code {
 
 	.experience-meta {
 		text-align: left;
-	}
-
-	.oss-visual {
-		min-height: 340px;
 	}
 
 	.pr-row {
